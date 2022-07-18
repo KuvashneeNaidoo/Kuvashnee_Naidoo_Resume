@@ -1,0 +1,313 @@
+/* CSS - Resume */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  background: linear-gradient(-45deg, #abf8bf, #92a4f7, #ffa9e5, #ec8bf0);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+}
+
+/* To create an animated multi-color background, I used Slide Revolution, 2020 as a resource to create a keyframes 
+gradient background */
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1 {
+  font-family: 'Hahmlet', serif;
+  color: black;
+  font-size: 60px;
+  transform: translateX(-30%);
+}
+
+h2,
+h3 {
+  text-align: center;
+  font-family: 'Hahmlet', serif;
+  color: black;
+  font-size: 30px;
+}
+
+h4 {
+  text-align: center;
+  font-family: 'Hahmlet', serif;
+  color: darkslategray;
+  font-size: 20px;
+}
+
+h5 {
+  text-align: center;
+  font-family: 'Hahmlet', serif;
+  color: black;
+  font-size: 20px;
+}
+
+h6 {
+  font-family: 'Hahmlet', serif;
+  color: black;
+  font-size: 30px;
+  padding: 10px;
+  transform: translateX(-30%);
+}
+
+p {
+  font-family: 'Spectral', serif;
+}
+
+i {
+  cursor: pointer;
+}
+
+/*Buttons*/
+#btn {
+  transform: translateX(75%);
+  height: 45px;
+  width: 15%;
+  border: none;
+  outline: none;
+  background: crimson;
+  color: white;
+  font-weight: 500;
+  border-radius: 60px;
+  text-decoration: none;
+  padding: 10px;
+  font-family: 'Spectral', serif;
+}
+
+#btn:hover {
+  background-color: black;
+  transition: 0.5s;
+}
+
+/*Navigation*/
+.navbar {
+  font-size: 20px;
+  box-shadow: 0 5px 10px lightslategray;
+  background-color: black;
+}
+
+nav ul {
+  margin: 0 auto;
+}
+
+nav ul li {
+  margin: auto 20px;
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: 'Spectral', serif;
+}
+
+/*Home*/
+#home {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  background: url(images/background.jpg); /*Background cover image*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#home h1 {
+  color: white;
+}
+
+#home h6 {
+  color: black;
+}
+
+/*About*/
+#aboutimg {
+  border-radius: 50%;
+}
+
+#about {
+  width: 100%;
+  display: flex;
+  padding: 40px;
+}
+
+#about h2 {
+  padding-top: 10%;
+}
+
+/*Education*/
+#education h2 {
+  padding-top: 10%;
+}
+
+.education .container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 50px;
+  padding: 20px 0;
+  margin-left: 100px;
+}
+
+.education .container .school {
+  width: 42%;
+  border-left: 3px solid whitesmoke;
+  margin: 40px 20px;
+  padding-left: 40px;
+  position: relative;
+}
+
+.education .container .school span {
+  background: black;
+  color: whitesmoke;
+  border-radius: 20px;
+  padding: 10px 15px;
+}
+
+.education .container .school h3 {
+  color: whitesmoke;
+}
+
+.education .container .school p {
+  color: black;
+  padding: 10px;
+}
+
+.education .container .school i {
+  position: absolute;
+  top: -5px;
+  left: -33px;
+  height: 62px;
+  width: 62px;
+  border-radius: 50%;
+  line-height: 62px;
+  color: whitesmoke;
+  background-color: crimson;
+}
+
+/*Experience*/
+#experience h2 {
+  padding-top: 10%;
+}
+
+.experience .container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  padding-left: 30px;
+  margin-left: 100px;
+}
+
+.experience .container .work {
+  width: 40%;
+  border-left: 3px solid whitesmoke;
+  margin: 40px 20px;
+  padding-left: 40px;
+  position: relative;
+}
+
+.experience .container .work span {
+  background: black;
+  color: whitesmoke;
+  border-radius: 20px;
+  padding: 10px 15px;
+}
+
+.experience .container .work h3 {
+  color: whitesmoke;
+}
+
+.experience .container .work p {
+  color: black;
+  padding: 10px;
+}
+
+.experience .container .work i {
+  position: absolute;
+  top: -5px;
+  left: -33px;
+  height: 62px;
+  width: 62px;
+  border-radius: 50%;
+  line-height: 62px;
+  color: whitesmoke;
+  background-color: purple;
+}
+
+/*Skills and Competencies*/
+.skills {
+  display: inline-block;
+  width: 24%;
+  padding-bottom: 5%;
+}
+
+#skills h2 {
+  padding-top: 10%;
+}
+
+.skills i {
+  font-size: 60px;
+  color: rgb(250, 60, 60);
+}
+
+/*Projects*/
+.projects h2 {
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+
+.projects h3 {
+  padding-top: 2%;
+}
+
+#projectimg {
+  height: 70%;
+  width: 90%;
+}
+
+/*Footer/Contact*/
+#contact h2 {
+  padding-top: 20px;
+}
+
+#contact h5 {
+  padding-top: 20px;
+}
+
+/*Page Up button*/
+.top .fas {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: black;
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 25px;
+}
+
+/* References:
+     1. Code with Dary. 2020. How to use font awesome icons in 2020 | Introduction to HTML5 and CSS2 | HTML5 and CSS3 in 2020. Retrieved 16 July 2022, from https://youtu.be/wiw68Y-hPla 
+     2. MDBootstrap. 2021. Bootstrap Footer Generator. Retrieved 17 July 2022, from https://mdbootstrap.com/docs/standard/tools/builders/footer/#!
+     3. Mr. Web Designer. Glassmorphism PORTFOLIO Website Design [HTML CSS JS] - Step By Step. Retrieved 16 July 2022, from https://youtu.be./gmY-AUbdTUo
+     4. Online Tutorials. 2021. How to Create Responsive Resume Website using HTML and CSS | Resume CV design in HTML CSS. Retrieved 17 July 2022, from https://youtu.be/hnjHCmaUVPg
+     5. Slide Revolution. 2020. The Best Looking CSS Animated Background Examples. Retrieved 17 July 2022, from https://www.sliderrevolution.com/resources/css-animated-background/
+     6. Tutorials Dev. 2021. How to Create a Responsive Personal Portfolio Website Just Using HTML CSS 2021. Retrieved 17 July 2022, from https://youtu.be./zX3ikOsQg58
+*/
